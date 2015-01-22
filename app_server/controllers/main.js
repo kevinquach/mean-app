@@ -9,6 +9,12 @@ module.exports.about = function(req, res){
 /* GET 'sign in' page */
 
 module.exports.signin = function(req, res){
-  res.render('index', { title: 'Sign In' });
+  res.render('signin-index', { title: 'Sign in to Loc8r' });
   console.log('LOGGING:'.rainbow, __filename);
+};
+
+/* GET 'about us' page */
+
+module.exports.about = function(req, res){
+  res.render('generic-text', { title: 'About' });
 };
