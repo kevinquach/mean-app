@@ -17,4 +17,5 @@ module.exports.signin = function(req, res){
 
 module.exports.about = function(req, res){
   res.render('generic-text', { title: 'About' });
+  console.log('LOGGING:'.rainbow, __filename);
 };
